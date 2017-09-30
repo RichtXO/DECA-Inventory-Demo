@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.viewController">
+   <bottom>
+      <AnchorPane prefHeight="75.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="homeButton" layoutX="14.0" layoutY="24.0" mnemonicParsing="false" onAction="#homeButtonAction" text="Return to Main Menu">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button fx:id="update" layoutX="503.0" layoutY="24.0" mnemonicParsing="false" onAction="#updateButtonAction" text="Update">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font></Button>
+            <Button fx:id="remove" layoutX="609.0" layoutY="24.0" mnemonicParsing="false" onAction="#removeButtonAction" text="Remove">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <left>
+      <Pane prefHeight="273.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Pane prefHeight="273.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
+   </right>
+   <top>
+      <Pane prefHeight="52.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="200.0" layoutY="12.0" text="List of Items in Inventory">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <TableView fx:id="tableView" fixedCellSize="10.0" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="99.0" text="Name" />
+            <TableColumn fx:id="priceColumn" prefWidth="85.0" text="Price" />
+            <TableColumn fx:id="amountColumn" prefWidth="144.0" text="Amount in each Box" />
+            <TableColumn fx:id="amountBoxColumn" prefWidth="143.0" text="Amount of Boxes" />
+            <TableColumn fx:id="chargeColumn" prefWidth="128.0" text="Selling Price" />
+         </columns>
+      </TableView>
+   </center>
+</BorderPane>

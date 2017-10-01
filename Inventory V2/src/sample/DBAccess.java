@@ -3,9 +3,6 @@ package sample;
 /**
  * Connects to the desired database in MySQL
  *
- * DATABASE THAT'S CURRENTLY CODED IS FOR TESTING PURPOSES ONLY
- * CHANGE ONCE IT'S FINALIZED AND OTHER COMMANDS IN ALL METHODS
- *
  * Created by RichtXO on 6/27/16.
  */
 
